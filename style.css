@@ -10,6 +10,7 @@
   #object-position: center, center;
   margin-bottom: -2px;
   animation: zoom-in 2s ease;
+  object-fit: cover;
 }
 @keyframes zoom-in {
   0% {
