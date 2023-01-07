@@ -7,8 +7,6 @@
   left: 0;
   max-width: 100%;
   height: auto;
-  #object-fit: cover;
-  #object-position: center, center;
   margin-bottom: -2px;
   animation: zoom-in 2s ease;
 }
@@ -30,7 +28,7 @@
 }
 .fileImage1{
   position: absolute;
-  top: -355px;
+  top: -340px;
   left: 0px;
   scale: 70%;
 
@@ -643,11 +641,11 @@ Main components
 }
 .cd-timeline-content h2 {
   font-weight: normal;
-  color: rgba(255,255,255,.9);  
+  color: #0a0b22;  
   margin-top:0;
   margin-bottom: 5px;
 }
-.cd-timeline-content p, .cd-timeline-content .cd-date {
+.cd-timeline-content p, .cd-timeline-content .cd-date { /*WEIßER TEXT -> INHALT*/
   color: rgba(255,255,255,.7);
   font-size: 18px;
 }
@@ -696,7 +694,7 @@ Main components
     top: 24px;
     left: 100%;
     border-color: transparent;
-    border-left-color: #333C42;
+    border-left-color: #07091a;
   }
   .cd-timeline-content .cd-date {
     position: absolute;
@@ -714,7 +712,7 @@ Main components
     left: auto;
     right: 100%;
     border-color: transparent;
-    border-right-color: #333C42;
+    border-right-color: #07091a;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
     float: right;
