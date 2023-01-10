@@ -450,14 +450,6 @@ textarea{
   .lalalala {
     margin-top: 100px;
   }
-  #c2 {
-    font-size: 9pt;
-  }
-  #c3 {
-    font-size: 9pt;
-    margin-top: 5px;
-    margin-bottom: 30px;
-  }
 
   #image {
     overflow: hidden;
@@ -475,6 +467,14 @@ textarea{
   }
 }
 
+#c2 {
+  font-size: 9pt;
+}
+#c3 {
+  font-size: 9pt;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
 
 
 
@@ -736,7 +736,13 @@ Main components
 
 
 
-.sponsoring2 {
+.sponsoring21 {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sponsoring22 {
   width: 50%;
   display: block;
   margin-left: auto;
@@ -800,8 +806,11 @@ Main components
   .lalalala {
     margin-top: 100px;
   }
-  .sponsoring2 {
-    width: 30%;
+  #c2 {
+    font-size: 20pt;
+  }
+  #c3 {
+    font-size: 20pt;
   }
   #infos {
     font-size: 40px;
@@ -834,7 +843,7 @@ Main components
     display: none;
   }
   .container123D {
-    height: 800px;
+    height: 87vh;
     background-image: url('images/palais2.png');
     background-size: cover;
     background-position: center;
@@ -874,6 +883,37 @@ Main components
   }
   #Tisch {
     margin-top: 500px;
+  }
+  .rndu {
+    font-size: 17px;
+  }
+  .sponsoring21 {
+    height: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    margin-left: 10vw;
+    margin-top: 10vh;
+  }
+  .sponsoring {
+    height: 20%;
+    max-width: 20%;
+  }
+  .sponsoring22 {
+    height: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+    margin-right: 10vw;
+    margin-top: 10vh;
+  }
+  .l2 {
+    margin-top: 230vh;
+  }
+  .l22 {
+    margin-top: -20vh;
   }
 }
 
