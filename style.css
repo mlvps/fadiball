@@ -13,13 +13,7 @@
   height: auto;
   margin-bottom: -2px;
   animation: zoom-in 2s ease;
-}
-
-.spopnsoring {
-  object-position: center;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .container123 {
@@ -27,6 +21,14 @@
   background-image: url('images/palaisMOBILE.png');
   background-size: cover;
   background-position: center;
+  display: block;
+}
+.container123D {
+  display: none;
+  visibility: hidden;
+}
+.fileImageD {
+  visibility: hidden;
 }
 
 @keyframes zoom-in {
@@ -523,7 +525,7 @@ Main components
   width: 4px;
   background: linear-gradient(90deg, #a37a1d, #d3a74d, #e6bd69, #b58e3d, #956e14);
 }
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 767px) {
   #cd-timeline {
     margin-top: 3em;
     margin-bottom: 3em;
@@ -549,7 +551,7 @@ Main components
 .cd-timeline-block:last-child {
   margin-bottom: 0;
 }
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 767px) {
   .cd-timeline-block {
     margin: 4em 0;
   }
@@ -573,12 +575,12 @@ Main components
 .cd-timeline-img {
   background: #d3a74d;
 }
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 767px) {
   .cd-timeline-img {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     left: 50%;
-    margin-left: -15px;
+    margin-left: -10px;
     margin-top: 15px;
     font-size: 12px;
     -webkit-transform: translateZ(0);
@@ -664,7 +666,21 @@ Main components
     font-size: 0.875rem;
   }
 }
-@media only screen and (min-width: 1170px) {
+.mitternacht::before {
+  content: "Mitternachts-einlage";
+  visibility: visible;
+}
+@media only screen and (min-width: 767px) {
+  .cd-timeline-content p, .cd-timeline-content .cd-date { /*WEIßER TEXT -> INHALT*/
+    font-size: 25px;
+  }
+  .cd-timeline-content h2{
+    font-size: 35px;
+  }
+  .mitternacht::before {
+    content: "Mitternachtseinlage";
+    visibility: visible;
+  }
   .cd-timeline-content {
     color: white;
     margin-left: 0;
@@ -706,13 +722,160 @@ Main components
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sponsoring2 {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.alfa {
+  width: 50%;
+}
 .ig {
   scale: 10%;
   margin-top: -100px;
   margin-bottom: -200px;
 }
-
-
+.igimg {
+  display: block;
+}
+.Karte {
+  width: 60%;
+}
+#Inf2 {
+  font-size: 17px;
+  position: relative;
+  padding: 10px 30px 10px;
+  margin-bottom: 10px;
+  #color: #ffcf00;
+  font-family: 'Archivo', sans-serif;
+  text-align: center;
+  background: linear-gradient(90deg, #a37a1d, #d3a74d, #ffeb94, #e6bd69, #ffd77c, #b58e3d, #956e14);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Karte2 {
+  margin-top: 10px;
+}
+#Tisch {
+  padding: 0 0 10px;
+  margin-bottom: 10px;
+  #color: #ffcf00;
+  background: linear-gradient(90deg, #a37a1d, #d3a74d, #ffeb94, #e6bd69, #ffd77c, #b58e3d, #956e14);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+@media only screen and (min-width: 767px) {
+  .igimg {
+    display: none;
+  }
+  .Karte {
+    width: 55%;
+    margin-top: 50px;
+  }
+  .alfa {
+    width: 20%;
+    margin-top: 50px;
+  }
+  #contactcss {
+    width: 24%;
+  }
+  .lalalala {
+    margin-top: 100px;
+  }
+  .sponsoring2 {
+    width: 30%;
+  }
+  #infos {
+    font-size: 40px;
+  }
+  #Informationen {
+    font-size: 20px;
+  }
+  #Inf2 {
+    font-size: 18px;
+  }
+  .launch-time div p {
+    font-size: 60px;
+  }
+  #PostInformationen {
+    font-size: 18px;
+  }
+  .contactpadding h2 {
+    font-size: 40px;
+  }
+  .nav-link {
+    font-size: 1.2em;
+  }
+  .img-fluid {
+    font-size: 1.2em;
+  }
+  .container123 {
+    display: none;
+  }
+  .fileImage {
+    display: none;
+  }
+  .container123D {
+    height: 800px;
+    background-image: url('images/palais2.png');
+    background-size: cover;
+    background-position: center;
+    display: block;
+    visibility: visible;
+  }
+  .fileimageD {
+    object-fit: cover;
+    object-position: bottom;
+    position: relative;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: -2px;
+    animation: zoom-in 2s ease;
+    visibility: visible;
+  }
+  @keyframes zoom-in {
+    0% {
+    transform: scale(1.15, 1.15);
+    }
+    100% {
+    transform: scale(1, 1);
+    }
+  }
+  .Karte1 {
+    margin-top: 50px;
+    width: 50%;
+    float: left;
+  }
+  .Karte2 {
+    margin-top: 50px;
+    width: 50%;
+    float: right;
+  }
+  #Tisch {
+    margin-top: 500px;
+  }
+}
 
 
 
